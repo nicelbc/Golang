@@ -1,7 +1,7 @@
 package engine
 
 import (
-	"fetcher"
+	"crawler/fetcher"
 	"log"
 )
 
