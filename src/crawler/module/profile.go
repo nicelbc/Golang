@@ -3,9 +3,9 @@ package module
 type Profile struct {
 	Name string
 	Gender string
-	Age int
-	Height int
-	Weight int
+	Age string
+	Height string
+	Weight string
 	Income string
 	Marriage string
 	Education string
