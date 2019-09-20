@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	slice := make([]int, 10, 20) //定义slice的 len 10 cap 20
-	fmt.Printf("%p \n", slice) // slice 指针地址
+	fmt.Printf("%p \n", slice)   // slice 指针地址
 	fmt.Printf("%d %d\n", len(slice), cap(slice))
 
 	slice = append(slice, 1, 2, 3, 4, 5)
@@ -15,7 +15,6 @@ func main() {
 	fmt.Printf("%p \n", slice) // 超过cap 地址改变 并且cap翻倍
 	fmt.Printf("%d %d \n", len(slice), cap(slice))
 }
-
 
 /*
 切片slice的len和cap
