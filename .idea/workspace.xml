@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7f4a617-90a0-410b-a2a8-b2e26be70c07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/key.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode_26/removeDu.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/slice/slice.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/slice/slice.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LeetCode_714/maxProfit.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode_714/maxProfit.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,13 +65,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build key.go">
-    <configuration name="go build functionArguments" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build leetcode_26">
+    <configuration name="go build LeetCode_714" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/src/functionArguments/main.go" />
-      <package value="functionArguments" />
+      <filePath value="$PROJECT_DIR$/src/LeetCode_714/maxProfit.go" />
+      <package value="LeetCode_714" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -83,12 +83,12 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build map" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build leetcode_26" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/src/map/main.go" />
-      <package value="map" />
+      <filePath value="$PROJECT_DIR$/src/leetcode_26/removeDu.go" />
+      <package value="leetcode_26" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -111,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build leetcode_26" />
+        <item itemvalue="Go Build.go build LeetCode_714" />
         <item itemvalue="Go Build.go build key.go" />
         <item itemvalue="Go Build.go build slice" />
         <item itemvalue="Go Build.go build test.go" />
-        <item itemvalue="Go Build.go build functionArguments" />
-        <item itemvalue="Go Build.go build map" />
       </list>
     </recent_temporary>
   </component>
