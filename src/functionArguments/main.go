@@ -12,6 +12,7 @@ func main() {
 	fmt.Printf("after update:%v\n", array)
 
 }
+
 //函数参数是slice 并且改变slice的值
 //定义形参 指向slice的指针
 func update(array *[]int) {

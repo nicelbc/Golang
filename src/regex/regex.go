@@ -9,7 +9,6 @@ const text = "My email is mail@gmail.com@abc.com" +
 	"  email1 is abc@de.org  email2 is   kk@qq.com  " +
 	" email3 id ddd@abc.com.cn   email4 is ddd@abc.com.cn"
 
-
 func main() {
 	re := regexp.MustCompile("([a-zA-Z0-9]+)@([a-zA-Z0-9]+)(\\.[a-zA-Z0-9\\.]+)")
 
@@ -23,10 +22,11 @@ func main() {
 
 	//子匹配
 	matchsub := re.FindAllStringSubmatch(text, -1)
-	for _, m := range  matchsub {
+	for _, m := range matchsub {
 		fmt.Println(m)
 	}
 }
+
 /*
 . 匹配任意字符
 + 匹配一次或者多次

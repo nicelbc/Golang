@@ -6,7 +6,6 @@ import (
 	"regexp"
 )
 
-
 const ageRe = `(<div class="m-btn purple" [^>]+)>([^<]+)</div>`
 
 func ParseProfile(contents []byte, name string) engine.ParseResult {
@@ -16,12 +15,10 @@ func ParseProfile(contents []byte, name string) engine.ParseResult {
 	re := regexp.MustCompile(ageRe)
 	matchs := re.FindAllSubmatch(contents, -1)
 
-
 	profile.Age = string(matchs[0][2])
 
-
 	result := engine.ParseResult{
-		Items: []interface{} {profile},
+		Items: []interface{}{profile},
 	}
 
 	return result

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7f4a617-90a0-410b-a2a8-b2e26be70c07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode_26/removeDu.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeetCode_714/maxProfit.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode_714/maxProfit.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,13 +63,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build leetcode_26">
+  <component name="RunManager" selected="Go Build.go build crawler">
     <configuration name="go build LeetCode_714" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="go" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/src/LeetCode_714/maxProfit.go" />
       <package value="LeetCode_714" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build crawler" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/src/crawler/main.go" />
+      <package value="crawler" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -101,21 +108,13 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build test.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="go" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/test.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build crawler" />
         <item itemvalue="Go Build.go build leetcode_26" />
         <item itemvalue="Go Build.go build LeetCode_714" />
         <item itemvalue="Go Build.go build key.go" />
         <item itemvalue="Go Build.go build slice" />
-        <item itemvalue="Go Build.go build test.go" />
       </list>
     </recent_temporary>
   </component>
@@ -158,11 +157,6 @@
           </value>
         </entry>
       </map>
-    </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-      </set>
     </option>
   </component>
   <component name="VcsManagerConfiguration">

@@ -11,7 +11,4 @@ func main() {
 		ParseFunc: parser.ParseCityList,
 	})
 
-
 }
-
-
