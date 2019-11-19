@@ -41,3 +41,4 @@ func NewBlock(data string, preBlockHash []byte) *Block {
 func NewGenesisBlock() *Block {
 	return NewBlock("创世区块",[]byte{})
 }
+tst
