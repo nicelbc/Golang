@@ -33,7 +33,7 @@ func (pow *ProofOfWork) PrepareData(nonce int) []byte {
 			pow.block.PreBlockHash,//上一块哈希
 			pow.block.Data,//当前数据
 			IntToHex(pow.block.Timestamp),//时间转为十六进制
-			IntToHex(int64(targetBits)),//we位数
+			IntToHex(int64(targetBits)),//位数
 			IntToHex(int64(nonce)),//保存工作量的nonce
 		}, []byte{},
 		)
