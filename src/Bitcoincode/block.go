@@ -1,6 +1,9 @@
 package main
 
 import (
+	"bytes"
+	"encoding/gob"
+	"github.com/labstack/gommon/log"
 	"time"
 )
 
@@ -40,4 +43,28 @@ func NewBlock(data string, preBlockHash []byte) *Block {
 //创建创世区块
 func NewGenesisBlock() *Block {
 	return NewBlock("创世区块",[]byte{})
+}
+
+//对象转化为二进制字节集，可以写入文件
+func (block *Block) Serialize() []byte {
+	var result bytes.Buffer//开辟内存，存放字节集合
+	encoder := gob.NewEncoder(&result)//编码对象创建
+	err := encoder.Encode(block)//编码操作
+	if err != nil {
+		log.Panic(err)//处理错误
+	}
+
+	return result.Bytes()//返回字节
+}
+
+//读取文件，读到二进制字节集，二进制字节集转化为对象
+func DeserializeBlock(data []byte) *Block {
+	var block Block//对象存储字节转化的对象
+	decoder := gob.NewDecoder(bytes.NewReader(data)) //解码
+	err := decoder.Decode(&block)//尝试解码
+	if err != nil {
+		log.Panic(err)//处理错误
+	}
+
+	return &block
 }
