@@ -35,10 +35,13 @@ import (
 )
 
 func main(){
-	candidates := []int{2,3,6,7}
+	/*candidates := []int{2,3,6,7}
 	target := 7
 	result := combinationSum(candidates, target)
-	fmt.Println(result)
+	fmt.Println(result)*/
+
+	DFS2(1,3,7)
+	fmt.Println(res)
 }
 
 var res [][]int
@@ -63,5 +66,20 @@ func DFS(start, target int, candidates []int) {
 		path = append(path, candidates[i])
 		DFS(i, target - candidates[i], candidates)
 		path = path[:len(path) - 1]
+	}
+}
+
+func DFS2(start,k, n int) {
+	if k == 0 && n == 0 {
+		tmp := make([]int, len(path))
+		copy(tmp, path)
+		res = append(res, tmp)
+		return
+	}
+
+	for i := start; i < 10 && n - i >= 0; i++  {
+		path = append(path, i)
+		DFS2(i+1, k-1, n-i)
+		path = path[:len(path)-1]
 	}
 }
